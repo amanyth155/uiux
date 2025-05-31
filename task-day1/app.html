@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my app</title>
+    <link rel="manifest" href="./manifest.json">
+</head>
+<style>
+    body{
+        background-color: rgb(90, 206, 216);
+        font-size: xx-large;
+        align-items: center;
+        padding-left: 25%;
+    }
+</style>
+<body>
+     <a href="tablejs.html"  >page 1</a>
+     <a href="to-do.html"  >page 2</a>
+
+     <script>
+             if( "serviceWorker" in navigator){
+            navigator.serviceWorker.register("sw.js")
+        }
+    </script>
+
+</body>
+
+</html>
